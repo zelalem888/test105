@@ -1,0 +1,302 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.container-cover {
+  background: #77d7d5;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+
+}
+
+.top-navbar {
+display: flex;
+flex-wrap: nowrap;
+justify-content: space-between;
+padding: 10px 0;
+}
+.top-email {
+display: flex;
+flex-wrap: nowrap;
+gap: 5%;
+}
+
+.top-email-p {
+white-space: nowrap;
+margin: 0;
+font-size: 12px;
+font-family: "Playfair Display", serif;
+}
+
+.bi-icons {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+gap: 10%;
+}
+
+.nav{
+border: 0;
+outline: 0;
+list-style: none;
+text-decoration: none;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+  line-height: 75px;
+  
+}
+.brand{
+margin-top: 4%;
+}
+nav .nav{
+display: flex;
+}
+nav .nav .nav-button {
+cursor: pointer;
+height: 100%;
+padding: 0 30px;
+transition: .4s;
+}
+nav .nav .nav-link {
+color: #000000;
+font-size: 18px;
+font-weight: 500;
+}
+.last-child{
+background-color: #e85353;
+border: none;
+color: #fff; 
+border-radius: 34px;
+padding: 20px;
+
+
+}
+
+.nav-button {
+font-family: "Playfair Display", serif;
+}
+@media (max-width: 935px) {
+
+nav .nav .nav-button {
+    padding: 0 20px;
+}
+
+}
+@media screen and  (max-width: 794px) {
+nav .nav {
+    display: grid;
+    position: absolute;
+    background: #ffffff;
+    width: 89%;
+    top: 20%;
+    left: 0;
+    transform: translateY(-150%);
+    z-index: 1;
+    transition: .6s;
+}
+nav{
+  justify-content: space-between;
+}
+.brand{
+  margin-top: 8%;
+}
+.last-child{
+  background-color: #ffffff;
+  color: #000000;
+  padding: 20px 0;
+}
+
+
+nav .nav .nav-button {
+    padding-left: 35px;
+}
+
+nav .navbar-toggler {
+    display: grid !important;
+}
+
+}
+nav .navbar-toggler {
+display: none;
+height: min-content;
+margin: 18px -10px 0 0;
+cursor: pointer;
+}
+
+nav .navbar-toggler .bar {
+width: 40px;
+height: 5px;
+margin-bottom: 10px;
+background: #000000;
+border-radius: 10%;
+transition: .4s;
+}
+.input {
+display: none;
+}
+
+input:checked ~ nav .nav {
+transform: translateY(0);
+}
+
+input:checked ~ nav .navbar-toggler {
+margin-top: 35px;
+}
+
+input:checked ~ nav .navbar-toggler .bar:nth-child(1) {
+position: absolute;
+transform: rotate(45deg);
+}
+
+input:checked ~ nav .navbar-toggler .bar:nth-child(2) {
+display: none;
+}
+
+input:checked ~ nav .navbar-toggler .bar:nth-child(3) {
+transform: rotate(-45deg);
+}
+.last-child{
+color: #f0f0f0;
+}
+@media screen and (max-width:425px) {
+  .bi-icons{
+    display: none;
+  }
+  
+  .nav-bar{
+    flex-direction: column;
+    align-items: center;
+  }
+  }
+  @media screen and  (max-width: 425px) {
+  
+  .brand{
+    margin-top: 15%;
+  }
+  nav .nav {
+      display: grid;
+      position: absolute;
+      background: #ffffff;
+      width: 89%;
+      top: 16%;
+      left: 0;
+      transform: translateY(-150%);
+      z-index: 1;
+      transition: .6s;
+  }
+  }
+  @media screen and (max-width:270px) {
+    .top-email{
+      flex-direction: column;
+    }}
+
+/* ===================================================================================== */
+.dropbtn {
+  background-color: #ffffff;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+.dropdown-content a {
+  color: black;
+  padding: 0px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+  
+  /* =================================================================*/
+  /* second navigation */
+  
+  .front-img {
+    background-image: url("./images/404.png");
+    width: 100%;
+  height: auto !important;
+  background-size: cover;
+  min-height: 100vh;
+  }
+  .front-page-container{
+
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+  
+  
+}
+  .front-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    margin-top: 5%;
+  }
+  .front-page-title,
+  .front-page-head {
+    color: white;
+    margin: -10px;
+  }
+  .front-page-title {
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    font-size: clamp(3.6em, 7vw, 10em);
+    text-transform: uppercase;
+  }
+  .front-page-head {
+    font-family: "Sue Ellen Francisco", cursive;
+    font-weight: 200;
+    font-size: 2rem;
+  }
+  
+  .front-button {
+    font-family: "Playfair Display", serif;
+  
+    padding: 1.5% 3%;
+    border: 0px;
+    border-radius: 50px;
+    margin-right: 20px;
+    background-color: #fff;
+  }
+  .front-button:first-child {
+    color: white;
+    background-color: #f76e70;
+  }
+  .middle-header-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: -10%;
+    min-height: fit-content;
+  }

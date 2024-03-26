@@ -1,0 +1,2011 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.container-cover {
+  background: #77d7d5;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+
+}
+
+.top-navbar {
+display: flex;
+flex-wrap: nowrap;
+justify-content: space-between;
+padding: 10px 0;
+}
+.top-email {
+display: flex;
+flex-wrap: nowrap;
+gap: 5%;
+}
+
+.top-email-p {
+white-space: nowrap;
+margin: 0;
+font-size: 12px;
+font-family: "Playfair Display", serif;
+}
+
+.bi-icons {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+gap: 10%;
+}
+
+.nav{
+border: 0;
+outline: 0;
+list-style: none;
+text-decoration: none;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+  line-height: 75px;
+  
+}
+.brand{
+margin-top: 4%;
+}
+nav .nav{
+display: flex;
+}
+nav .nav .nav-button {
+cursor: pointer;
+height: 100%;
+padding: 0 30px;
+transition: .4s;
+}
+nav .nav .nav-link {
+color: #000000;
+font-size: 18px;
+font-weight: 500;
+}
+.last-child{
+background-color: #e85353;
+border: none;
+color: #fff; 
+border-radius: 34px;
+padding: 20px;
+
+
+}
+
+.nav-button {
+font-family: "Playfair Display", serif;
+}
+@media (max-width: 935px) {
+
+nav .nav .nav-button {
+    padding: 0 20px;
+}
+
+}
+@media screen and  (max-width: 794px) {
+nav .nav {
+    display: grid;
+    position: absolute;
+    background: #ffffff;
+    width: 89%;
+    top: 20%;
+    left: 0;
+    transform: translateY(-150%);
+    z-index: 1;
+    transition: .6s;
+}
+nav{
+  justify-content: space-between;
+}
+.brand{
+  margin-top: 8%;
+}
+.last-child{
+  background-color: #ffffff;
+  color: #000000;
+  padding: 20px 0;
+}
+
+
+nav .nav .nav-button {
+    padding-left: 35px;
+}
+
+nav .navbar-toggler {
+    display: grid !important;
+}
+
+}
+nav .navbar-toggler {
+display: none;
+height: min-content;
+margin: 18px -10px 0 0;
+cursor: pointer;
+}
+
+nav .navbar-toggler .bar {
+width: 40px;
+height: 5px;
+margin-bottom: 10px;
+background: #000000;
+border-radius: 10%;
+transition: .4s;
+}
+.input {
+display: none;
+}
+
+input:checked ~ nav .nav {
+transform: translateY(0);
+}
+
+input:checked ~ nav .navbar-toggler {
+margin-top: 35px;
+}
+
+input:checked ~ nav .navbar-toggler .bar:nth-child(1) {
+position: absolute;
+transform: rotate(45deg);
+}
+
+input:checked ~ nav .navbar-toggler .bar:nth-child(2) {
+display: none;
+}
+
+input:checked ~ nav .navbar-toggler .bar:nth-child(3) {
+transform: rotate(-45deg);
+}
+.last-child{
+color: #f0f0f0;
+}
+@media screen and (max-width:425px) {
+  .bi-icons{
+    display: none;
+  }
+  
+  .nav-bar{
+    flex-direction: column;
+    align-items: center;
+  }
+  }
+  @media screen and  (max-width: 425px) {
+  
+  .brand{
+    margin-top: 15%;
+  }
+  nav .nav {
+      display: grid;
+      position: absolute;
+      background: #ffffff;
+      width: 89%;
+      top: 16%;
+      left: 0;
+      transform: translateY(-150%);
+      z-index: 1;
+      transition: .6s;
+  }
+  }
+  @media screen and (max-width:270px) {
+    .top-email{
+      flex-direction: column;
+    }}
+
+
+/* ===================================================================================== */
+.dropbtn {
+  background-color: #ffffff;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+.dropdown-content a {
+  color: black;
+  padding: 0px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/* =================================================================*/
+/* second navigation */
+
+.front-img {
+  background-image: url("./images/Photo.png");
+  width: 100%;
+  height: auto !important;;
+  background-size: cover;
+  min-height: 100vh;
+}
+.front-page-container{
+
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+
+
+}
+
+.front-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  margin-top: 5%;
+}
+
+.front-page-title,
+.front-page-head {
+  color: white;
+  margin: -10px;
+}
+
+.front-page-title {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-size: clamp(3.6em, 7vw, 10em);
+  text-transform: uppercase;
+  
+
+}
+
+.front-page-head {
+  font-family: "Sue Ellen Francisco", cursive;
+  font-weight: 200;
+  font-size: 2rem;
+}
+
+.front-button {
+  font-family: "Playfair Display", serif;
+
+  padding: 1.5% 3%;
+  border: 0px;
+  border-radius: 50px;
+  margin-right: 20px;
+  background-color: #fff;
+}
+
+.front-button:first-child {
+  color: white;
+  background-color: #f76e70;
+}
+
+.middle-header-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: -10%;
+}
+
+
+/* =====================================================================================*/
+
+.content-container {
+  background-color: #77d7d3;
+  display: flex;
+  flex-direction: column;
+  color: #2e4049;
+  padding: 3% 5%;
+}
+
+.section-title-top {
+  margin-top: 12px;
+  font: 800 30px Shippori Mincho, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.section-description-top {
+  color: #4a4a4a;
+  margin-top: 12px;
+  font: 400 17px Work Sans, sans-serif;
+}
+
+.discover-button {
+  border: 0;
+  border-radius: 34px;
+  background-color: #fff;
+  margin-top: 20px;
+  padding: 15px 15px;
+  font: 500 2vw Work Sans, sans-serif;
+  text-transform: uppercase;
+  cursor: pointer;
+ 
+}
+
+@media screen and (max-width: 768px) {
+
+  .section-description-top {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 668px) {
+  .middle-header-nav{
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr; 
+  margin: -20% auto 3% auto;
+  }
+  .section-description-top{
+    font-size:clamp(1.2em,5vw,3em);
+  }
+}
+
+
+/* =================================================================*/
+.volunteer-container {
+  background-color: #2e4049;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  /* width: 94%; */
+  padding: 3% 5%;
+
+}
+
+.volunteer-title {
+  font: 800 20px "Shippori Mincho", -apple-system, Roboto, Helvetica, sans-serif;
+  margin-top: 33px;
+}
+
+.volunteer-description {
+  font: 400 14px "Work Sans", sans-serif;
+  margin-top: 15px;
+ 
+}
+
+.join-button {
+  text-decoration: underline;
+  text-transform: uppercase;
+  margin-top: 15px;
+  font: 500 15px "Work Sans", sans-serif;
+  cursor: pointer;
+}
+
+@media screen and (max-width:768px) {
+  .volunteer-title {
+    margin-top: 15px;
+  }
+
+  .volunteer-description {
+    margin: 0;
+  }
+
+}
+@media screen and (max-width: 668px) {
+  .volunteer-title{
+    font-size:clamp(1.6em,5vw,3em);
+  }
+  .volunteer-description{
+    font-size: clamp(1.2em,5vw,3em);
+  }
+}
+
+/* =================================================================*/
+.image-responsive {
+  background-image: url('./images/Video.png');
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+
+}
+.at69{
+  visibility: hidden;
+  width: 100%;
+  height: fit-content;
+}
+
+/* =================================================================*/
+
+.flex-row {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ grid-template-areas: "flex-column" "flex-column";
+}
+
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  margin-left: 0px;
+}
+
+.flex-column:last-child {
+  background-color: #ecf1f0;
+  padding: 10%;
+  border-radius: 20px;
+}
+
+.about-title {
+  color: #ff6d6d;
+  font: 35px/108.3% "Sue Ellen Francisco", -apple-system, Roboto, Helvetica,
+    sans-serif;
+}
+
+.main-goals {
+  color: #2e4049;
+  margin-top: 4px;
+  font: 800 40px/48px "Shippori Mincho", -apple-system, Roboto, Helvetica,
+    sans-serif;
+}
+
+.about-content {
+  color: #727272;
+  align-self: stretch;
+  margin-top: 13px;
+  font: 20px/26px "Work Sans", sans-serif;
+}
+
+.more-about-btn {
+  justify-content: center;
+  border-radius: 34px;
+  margin-bottom: 14px;
+  border: none;
+  background-color: #ff6d6d;
+  color: #fff;
+  white-space: nowrap;
+  text-transform: uppercase;
+  padding: 22px 40px;
+  font: 500 18px "Work Sans", sans-serif;
+  cursor: pointer;
+}
+
+
+.donation-title {
+  color: #2e4049;
+  align-self: start;
+  margin-top: 47px;
+  white-space: nowrap;
+  font: 800 25px/120% "Shippori Mincho", -apple-system, Roboto, Helvetica,
+    sans-serif;
+}
+
+.check {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  font-size: 15px;
+}
+.check i {
+  margin: 5% 0;
+}
+
+
+.donation-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  font-size: 20px;
+  color: #2e4049;
+  font-weight: 800;
+  line-height: 120%;
+  padding: 3px 0;
+}
+
+.section-heading {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.horizontal {
+  height: 5px;
+  border: none;
+  border-radius: 20px;
+  background: rgb(255, 121, 2);
+  background: linear-gradient(90deg, rgba(255, 121, 2, 1) 0%, rgba(255, 121, 2, 1) 56%, rgb(175, 175, 175) 56%, rgb(175, 175, 175) 100%);
+}
+
+.donate-now-btn {
+  justify-content: center;
+  border-radius: 34px;
+  background-color: #fff;
+  align-self: start;
+  margin-top: 40px;
+  color: #2e4049;
+  white-space: nowrap;
+  text-transform: uppercase;
+  padding: 22px 45px;
+  font: 500 18px "Work Sans", sans-serif;
+  cursor: pointer;
+}
+
+@media screen and (max-width:970px) {
+  .main {
+    margin-top: 100px;
+  }
+
+  .about-title {
+    margin: 0;
+  }
+
+  .main-goals {
+    font-size: 30px;
+    margin: 0;
+  }
+
+  .about-content {
+    font-size: 16px;
+  }
+
+  .check {
+    font-size: 15px;
+
+  }
+}
+@media screen and (max-width: 768px) {
+  .check{
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 668px) {
+  .flex-row{
+   grid-template-columns: 1fr;
+   grid-template-rows: 1fr 1fr; 
+   grid-template-areas: "flex-column" "flex-column"; 
+  }
+  .main-goals {
+    font-size: 20px;
+    
+  }
+  .about-content{
+    margin: 0;
+  }
+  .more-about-btn{
+
+    font-size: 15px !important;
+    padding: 15px 10px;
+    margin-top: 5%;
+  }
+  
+  .flex-column:last-child{
+    padding: 8%;
+  }
+  .check{
+    font-size:20px;
+    justify-content: space-around;
+  }
+  
+}
+
+@media screen and (max-width: 490px){
+  .check{
+    flex-direction: column;
+    font-size: 15px; 
+  }
+}
+
+
+/* =================================================================*/
+.background {
+  background-color: rgba(241, 238, 236, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+  margin-top: 160px;
+  width: 100%;
+}
+
+h2.section-title {
+  margin: 49px 0px -10px 10%;
+  text-align: justify;
+  color: #ff6d6d;
+  font: 400 35px/108.3% "Sue Ellen Francisco", -apple-system, Roboto, Helvetica,
+    sans-serif;
+}
+
+.section-description {
+  color: #2e4049;
+  font: 800 30px/40px "Shippori Mincho", -apple-system, Roboto, Helvetica,
+    sans-serif;
+}
+
+.more-causes {
+  justify-content: center;
+  border-radius: 34px;
+  border: 0;
+  background-color: #ff6d6d;
+  color: #fff;
+  text-transform: uppercase;
+  margin: auto 0;
+  padding: 22px 35px;
+  font: 500 15px "Work Sans", sans-serif;
+}
+.cause-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "cause" "cause" "cause";
+  margin-top: 3%;
+  gap: 2%;
+
+
+}
+
+.cause-image-wrapper {
+  position: relative;
+  display: flex;
+  width: 100%;
+  align-items: start;
+  font-size: 25px;
+  color: #ff6d6d;
+}
+
+.cause-image {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.progress {
+  position: relative;
+  font-family: "Shippori Mincho", sans-serif;
+  justify-content: center;
+  background-color: #fff;
+  margin-bottom: 203px;
+  padding: 8px 13px;
+}
+
+.cause-details {
+  background-color: #fff;
+  flex-direction: column;
+  padding: 34px 30px;
+}
+
+.cause-title {
+  margin: 0;
+  color: #07090a;
+  font: 25px/25px "Shippori Mincho", -apple-system, Roboto, Helvetica,
+    sans-serif;
+}
+
+.cause-stats {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 120%;
+}
+
+.donate-button {
+  justify-content: center;
+  border-radius: 34px;
+  border: 0;
+  background-color: #2e4049;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 19px 36px;
+  font: 500 15px "Work Sans", sans-serif;
+  margin-top: 36px;
+}
+
+.decorative-img {
+  aspect-ratio: 6.25;
+  object-fit: auto;
+  object-position: center;
+  width: 446px;
+  max-width: 100%;
+  margin: 50px 0 80px;
+}
+
+.raised {
+  color: #2e4049;
+  font-family: "Shippori Mincho", sans-serif;
+}
+
+.goal {
+  color: #ff6d6d;
+  font-family: "Shippori Mincho", sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  .section-description {
+    font-size: 25px;
+    margin: 0;
+  }
+
+  .more-causes {
+    padding: 15px 15px;
+    font-size: 13px;
+  }
+
+  .cause-details {
+    padding: 20px 15px;
+  }
+
+  .cause-title {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 690px) {
+    .cause-container{
+      grid-template-columns: 1fr;
+      grid-template-areas: "cause";
+    }
+    .section-heading{
+      flex-direction: column;
+    }
+
+    .section-description{
+      margin-bottom: 3%;
+    }
+  
+}
+
+
+
+/* =================================================================*/
+
+.content-containers {
+  background-color: rgba(46, 64, 73, 1);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.content-section {
+  background-image: url('./images/homepage-middle-cover.png');
+}
+
+.info-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "info-text-help""form-container";
+  margin-top: 92px;
+  margin-bottom: 64px;
+}
+
+.info-text-help {
+  color: #fff;
+  padding: 0 5%;
+}
+
+.info-text-form {
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+
+
+.info-text-form>input[type=text],
+input[type=emails],
+input[type=tel],
+textarea {
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 2%;
+  width: 60%;
+  margin: 3% auto;
+  color: white;
+
+}
+
+.info-text-form ::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.heading {
+  font: 35px/108.3% "Sue Ellen Francisco", -apple-system, Roboto, Helvetica,
+    sans-serif;
+  margin: 0;
+}
+
+.sub-heading {
+  margin: 2% auto;
+  margin-top: 10px;
+  font: 800 25px/48px "Shippori Mincho", -apple-system, Roboto, Helvetica,
+    sans-serif;
+}
+
+.details {
+  margin-top: 14px;
+  font: 15px/26px "Work Sans", sans-serif;
+}
+
+.illustration-image {
+  width: 100%;
+  aspect-ratio: 2.94;
+  object-fit: auto;
+  object-position: center;
+  margin-top: 16px;
+}
+
+.action-button {
+  justify-content: center;
+  border: 0;
+  border-radius: 34px;
+  background-color: #ff6d6d;
+  color: #fff;
+  margin-top: 30px;
+  text-transform: uppercase;
+  padding: 22px 39px;
+  font: 500 18px "Work Sans", sans-serif;
+  cursor: pointer;
+}
+
+.action-buttons {
+  border: 0;
+  border-radius: 34px;
+  background-color: #ffffff;
+  color: #000000;
+  margin: 5% 10%;
+  width: fit-content;
+  text-transform: uppercase;
+  padding: 22px 39px;
+  font: 500 18px "Work Sans", sans-serif;
+  cursor: pointer;
+}
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+@media screen and (max-width: 768px) {
+  .sub-heading {
+    font: 800 25px/30px "Shippori Mincho", -apple-system, Roboto, Helvetica,
+      sans-serif;
+  }
+
+  .action-button {
+    margin-top: 15px;
+    font-size: 14px;
+    padding: 15px 25px;
+  }
+
+  .action-buttons {
+    margin-top: 15px;
+    font-size: 14px;
+    padding: 15px 25px;
+  }
+}
+@media screen and (max-width: 690px) {
+  .info-section{
+    grid-template-columns: 1fr;
+  }
+  .form-container{
+    margin-top: 7%;
+  }
+  .info-text-form{
+    margin: 0 auto;
+  }
+}
+
+/* =================================================================*/
+.about-titles {
+  color: #ff6d6d;
+  font: 35px/108.3% "Sue Ellen Francisco", -apple-system, Roboto, Helvetica,
+    sans-serif;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.main-title {
+  text-align: center;
+
+  color: #2e4049;
+  padding: 46px 20px 0;
+  font: 800 40px/120% Shippori Mincho, sans-serif;
+}
+
+@media (max-width: 991px) {
+  .main-title {
+    margin-top: 40px;
+  }
+}
+
+/* =================================================================*/
+
+.service-container {
+  justify-content: center;
+  margin-top: 60px;
+  max-width: 100%;
+  padding: 0 20px;
+}
+
+@media (max-width: 991px) {
+  .service-container {
+    margin-top: 40px;
+  }
+}
+
+.service-grid {
+  gap: 20px;
+  display: flex;
+}
+
+@media (max-width: 991px) {
+  .service-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+  }
+}
+
+.service-item {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+}
+
+@media (max-width: 991px) {
+  .service-item {
+    width: 100%;
+  }
+}
+
+.service-content {
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  text-align: center;
+}
+
+.service-image {
+  aspect-ratio: 1;
+  object-fit: auto;
+  object-position: center;
+  width: 70px;
+}
+
+.service-title {
+  color: #2e4049;
+  margin-top: 15px;
+  font: 800 25px/120% Shippori Mincho, -apple-system, Roboto, Helvetica,
+    sans-serif;
+}
+
+.service-description {
+  color: #727272;
+  align-self: stretch;
+  margin-top: 16px;
+  font: 400 20px/26px Work Sans, sans-serif;
+}
+
+/* =================================================================*/
+.project-section {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-layout {
+  display: flex;
+  flex-direction: row;
+}
+
+.project-column {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 50%;
+  margin-left: 0px;
+}
+
+.project-content {
+  align-items: start;
+  background-color: #202d33;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  color: #fff;
+  font-weight: 400;
+  width: 100%;
+}
+
+.section-title-future {
+  margin: 5% 0 -3% 10%;
+  color: #ff6d6d;
+  font: 35px/1.08 Sue Ellen Francisco, -apple-system, Roboto, Helvetica,
+    sans-serif;
+
+}
+
+.featured-projects-title {
+  margin-left: 23px;
+  margin: 10px 0 0 10%;
+  white-space: nowrap;
+  font: 800 40px/120% Shippori Mincho, -apple-system, Roboto, Helvetica,
+    sans-serif;
+}
+
+.project-description {
+  margin: 1% 4% 0 10%;
+  font: 15px/20px Work Sans, sans-serif;
+}
+
+.more-projects-button {
+  justify-content: center;
+  border: 0;
+  border-radius: 34px;
+  background-color: #ff6d6d;
+  white-space: nowrap;
+  text-transform: uppercase;
+  margin: 20px 0 5% 10%;
+  padding: 15px 20px;
+  font: 500 14px Work Sans, sans-serif;
+}
+
+.image-column {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 25%;
+
+}
+
+.project-image {
+  aspect-ratio: 2.17;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  flex-grow: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .section-title-future {
+    font-size: 28px;
+  }
+
+  .featured-projects-title {
+    font-size: 30px;
+    margin: 3px 10%;
+  }
+
+  .more-projects-button {
+    margin: 3% 10%;
+    padding: 10px 15px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .project-layout{
+    flex-direction: column;
+  }
+  .project-column{
+    width: 100%;
+  }
+  .project-content{
+    width:100%; 
+  }
+  .image-column{
+    width: 100%; 
+
+  }
+}
+
+/* =================================================================*/
+
+.gallery-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+}
+
+.image-gallery {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.image-gallerys {
+  width: 100%;
+  height: 100%;
+
+}
+
+
+.highlight {
+  background-image: url('./images/Photo6.png');
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+}
+
+.topic-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 6%;
+}
+
+.highlight-inner {
+  border: none;
+  border-radius: 40px;
+  padding: 3% 5%;
+  background-color: #e85353;
+  color: white;
+  font-size: 17px;
+}
+
+.headings {
+  text-align: center;
+  margin-top: 0;
+  color: white;
+  font: 700 20px 'Shippori Mincho', sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  .headings {
+    text-align: center;
+    color: white;
+    font: 700 15px 'Shippori Mincho', sans-serif;
+  }
+
+  .highlight-inner {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .gallery-container{
+    flex-wrap: wrap;
+  }
+  .image-gallery{
+    flex: 0 50%;
+  }
+  
+}
+
+/* =================================================================*/
+.testimonial-container {
+  color: #ff6d6d;
+  text-align: center;
+  margin-top: 150px;
+  font: 400 35px/108.3% "Sue Ellen Francisco", -apple-system, Roboto, Helvetica,
+    sans-serif;
+}
+
+/* =================================================================*/
+.testimonial-title {
+  color: #2e4049;
+  text-align: center;
+  font: 800 40px/120% "Shippori Mincho", -apple-system, Roboto, Helvetica,
+    sans-serif;
+}
+
+/* =================================================================*/
+
+.profile-columns {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+  gap: 3%;
+
+}
+
+.card {
+  background-color: #ecf1f0;
+  padding: 4% 4% 0 4%;
+  height: 100%;
+}
+
+.profile-info-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+
+}
+
+.profile-image-container {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  
+}
+
+.profile-picture {
+  object-fit: cover;
+  object-position: center;
+  max-width: 100%;
+  flex-grow: 1;
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 68%;
+  margin-left: 20px;
+}
+
+.details-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.name {
+  color: #2e4049;
+  font: 700 20px Shippori Mincho, sans-serif;
+}
+
+.position {
+  color: #727272;
+  font: 400 20px/130% Work Sans, sans-serif;
+}
+
+.decorative-icon {
+  aspect-ratio: 1.35;
+  object-fit: cover;
+  object-position: center;
+  width: 45px;
+  margin: auto 0;
+}
+
+.profile-description {
+  color: #727272;
+  margin-top: 10px;
+  font: 400 18px/18px Work Sans, sans-serif;
+
+}
+
+@media screen and (max-width: 768px) {
+
+  .profile-info-container{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .profile-image-container{
+    margin: 0 auto;
+    width: 50%;
+
+  }
+  .profile-details{
+    width: 90%;
+    margin: 5% auto 0 auto;
+  }
+
+  .name {
+    font-size: 15px;
+  }
+
+  .position {
+    font-size: 14px;
+  }
+
+  .profile-description {
+    font-size: 13px !important;
+  }
+
+}
+@media screen and (max-width: 425px) {
+  .profile-columns{
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =================================================================*/
+.stats-container {
+  margin: 20% auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  flex-grow: 1;
+}
+
+.stat-value {
+  color: #2e4049;
+  text-align: center;
+  font: 800 60px/120% "Shippori Mincho", -apple-system, Roboto, Helvetica,
+    sans-serif;
+}
+
+.stat-description {
+  text-align: center;
+  margin-top: 10px;
+  font: 400 20px/26px "Work Sans", sans-serif;
+}
+@media screen and (max-width: 768px) {
+  .stats-container{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "stat-item";
+     
+  }
+  .stat-value{
+    font-size: 50px;
+  }
+  .stat-description{
+    font: 400 15px/15px "Work Sans", sans-serif; 
+  }
+}
+@media screen and (max-width: 425px) {
+  .stat-value{
+    font-size: 20px;
+  }
+  .stat-description{
+    font: 400 10px/15px "Work Sans", sans-serif; 
+  }
+  .stats-container {
+    gap: 10px;
+  }
+}
+
+/* =================================================================*/
+
+.image-container {
+    margin: 5% 5%; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+ 
+}
+
+.image {
+  
+  aspect-ratio: 3.13 / 1;
+  object-fit: cover;
+  object-position: center;
+  width: 80%; 
+  margin-bottom: 25%;
+  align-self: stretch;
+ 
+}
+
+.image-multiply {
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center;
+  mix-blend-mode: multiply;
+  align-self: stretch;
+  max-width: 100%;
+}
+
+.image-wide {
+  aspect-ratio: 3.85 / 1;
+  object-fit: cover;
+  object-position: center;
+  width: 171px;
+  align-self: stretch;
+  max-width: 100%;
+  margin: auto 0;
+}
+
+.image-med {
+  aspect-ratio: 3.33 / 1;
+  object-fit: cover;
+  object-position: center;
+  width: 151px;
+  text-align: center;
+  max-width: 100%;
+  margin: auto 0;
+}
+
+.image-small {
+  aspect-ratio: 2.5 / 1;
+  object-fit: cover;
+  object-position: center;
+  width: 121px;
+  align-self: stretch;
+  max-width: 100%;
+  margin: auto 0;
+}
+@media screen and (max-width: 768px) {
+  .image-container{
+   grid-template-columns: 1fr 1fr;
+  }
+
+  .image-container img{
+    width: 60%;
+    margin: 10% auto;
+    height: fit-content;
+  }
+}
+
+/* =================================================================*/
+
+
+.team-section {
+  background-color: rgba(241, 238, 236, 1);
+  display: flex;
+  margin-top: 150px;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  /* padding: 50px 80px; */
+}
+
+.profile-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  margin: 0 auto;
+  width: 80%;
+  padding-bottom: 5%;
+  gap:2%;
+}
+
+.section-title {
+  font: 800 40px/120% Shippori Mincho, -apple-system, Roboto, Helvetica,
+    sans-serif;
+  color: #2e4049;
+  text-align: center;
+}
+
+.subtitle {
+  color: #ff6d6d;
+  margin-top: 5%;
+  text-align: center;
+  font: 400 35px/108.3% Sue Ellen Francisco, -apple-system, Roboto, Helvetica,
+    sans-serif;
+}
+
+.profile-containers {
+  justify-content: center;
+  width: 100%;
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 0 0.5%; 
+}
+
+.profile-image {
+  width: 100%;
+  aspect-ratio: 0.74;
+  object-fit: cover;
+  object-position: center;
+}
+
+.profile-name {
+  color: #2e4049;
+  margin-top: 8px;
+  font-size: clamp(1em, 2vw , 4em);
+  font-weight: 800;
+  font-family: "Shippori Mincho", sans-serif;
+}
+
+.social-media-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 17px;
+}
+
+
+
+.volunteer-cta {
+  background-color: #77d7d3;
+  display: flex;
+  flex-direction: column;
+  color: #2e4049;
+  padding: 10px 8px;
+  align-items: center;
+  text-align: center;
+}
+
+.cta-title,
+.cta-description {
+  font: 800 2.1vw Shippori Mincho, -apple-system, Roboto, Helvetica,
+    sans-serif;
+}
+
+.cta-button {
+  border-radius: 34px;
+  background-color: #2e4049;
+  margin-top: 10px;
+  color: #fff;
+  padding: 10px 18px;
+  font-weight: 500;
+  font-size: clamp(1em,1.5vw,1.7em);
+  font-family:  "Work Sans", sans-serif;
+  cursor: pointer;
+}
+.cta-icon{
+  width: 40%; 
+}
+
+@media screen and (max-width: 768px) {
+
+  .profile-container{
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cta-description,
+  .cta-title {
+    font: 800 3.3vw Shippori Mincho, -apple-system, Roboto, Helvetica,sans-serif !important;
+  }
+}
+@media screen and (max-width: 425px) {
+  .team-section{
+    margin-top: 0;
+  }
+  .cta-title {
+    font: 800 3.3vw/10px Shippori Mincho, -apple-system, Roboto, Helvetica,sans-serif !important;
+  }
+  .profile-container{
+    flex-direction: column;
+  }
+  .profile-card{
+    width: 100%;
+    margin: 3% auto; 
+    
+  }
+  .volunteer-cta{
+    width: 100%;
+    margin: 3% auto; 
+  }
+  
+}
+
+/* =================================================================*/
+
+.event-container {
+  margin-top: 50px;
+  width: 1200px;
+  max-width: 100%;
+}
+
+.event-row {
+  display: flex;
+  gap: 20px;
+}
+
+.event-column {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.event-details,
+.organized-info,
+.address-info,
+.date-info,
+.organizer {
+  padding: 0 20px;
+}
+
+.event-image {
+  display: flex;
+  min-height: 344px;
+  width: 100%;
+  align-items: start;
+  padding: 0 60px 50px 0;
+  position: relative;
+}
+
+/* .image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  inset: 0;
+} */
+.date-badge {
+  background-color: #ff6d6d;
+  width: 116px;
+  padding: 21px 19px;
+  position: relative;
+  font-family: Shippori Mincho, sans-serif;
+  margin-bottom: 114px;
+}
+
+.event-time {
+  display: flex;
+  gap: 12px;
+  font-size: 18px;
+  font-weight: 500;
+  margin: auto 0;
+}
+
+.event-description {
+  font-family: Work Sans, sans-serif;
+}
+
+.event-title {
+  font-weight: 800;
+  font-size: 25px;
+  margin-top: 44px;
+}
+
+.event-description {
+  color: #727272;
+  margin-top: 12px;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.address-details {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  background-color: #f0f0f0;
+  padding: 16px 28px;
+  margin-top: 28px;
+}
+
+.event-divider {
+  background-color: #c7c7c7;
+  margin-top: 24px;
+  height: 1px;
+}
+
+
+/* =========================================================== */
+
+/*=============================================================*/
+
+.flex-row-footer {
+ display: grid;
+ grid-template-columns: 1fr 1fr; 
+}
+
+.blog-content {
+  background-image: url('./images/recent-blog.png');
+  padding: 1% 0;
+}
+
+.subscription-content,
+.blog-content {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 100%;
+}
+
+.subscription-box {
+
+  background-color: #ff6d6d;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  padding: 4% 0;
+}
+
+.subscription-title {
+  color: #fff;
+  font: bold 35px Sue Ellen Francisco, -apple-system, Roboto, Helvetica, sans-serif;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.newsletter-title {
+  color: #fff;
+  align-self: start;
+  width: 80%;
+  margin: 1% auto;
+}
+
+.recent-blog-title {
+  color: #fff;
+  align-self: start;
+  font: bold 35px Sue Ellen Francisco, -apple-system, Roboto, Helvetica, sans-serif;
+  width: 80%;
+  margin: 1% auto;
+
+}
+
+.header-pharagraph {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 2.1em;
+  font-family: 'Shippori Mincho', sans-serif;
+  ;
+}
+
+.subscription-text {
+  color: #fff;
+  width: 80%;
+  margin: 0 auto;
+  font: 400 20px/26px Work Sans, sans-serif;
+}
+
+.email-input {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  width: 80%;
+  gap: 10%;
+
+}
+
+.input-field {
+  font-family: 'Work Sans', sans-serif;
+  border-radius: 34px;
+  background-color: #fff;
+  border: none;
+  padding: 0 10%;
+
+}
+
+
+.send-button {
+
+  font-family: Work Sans, sans-serif;
+  justify-content: center;
+  border: none;
+  border-radius: 34px;
+  background-color: #2e4049;
+  color: #fff;
+  font-weight: 500;
+  white-space: nowrap;
+  text-transform: uppercase;
+  padding: 5% 10%;
+}
+
+
+.blog-image-wrapper {
+  position: relative;
+  display: flex;
+  min-height: 398px;
+  width: 100%;
+  align-items: center;
+  padding: 50px 80px;
+}
+
+
+.blog-image {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.blog-button {
+  justify-content: center;
+  border-radius: 34px;
+  border: none;
+  background-color: #2e4049;
+  align-self: start;
+  color: #fff;
+  text-transform: uppercase;
+  width: 50%;
+  margin: 2% 10%;
+  padding: 18px 24px;
+  font: 500 18px Work Sans, sans-serif;
+}
+.section a{
+  color: white !important;
+  text-decoration: none;
+}
+
+@media screen and (max-width:850px) {
+  .flex-row-footer{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr; 
+    text-align: center;
+  }
+  .email-input {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
+  }
+
+  .input-field {
+    width: 40%;
+    margin: 0 auto;
+   }
+   .send-button{
+     width: 30%;
+    margin: 0 auto;
+
+   }
+  .header-pharagraph{
+    font-size: 1.8rem; 
+  }
+  .blog-button{
+    font-size: 14px; 
+    margin: 3% auto;
+
+  }
+}
+
+@media screen and (max-width: 425px){
+  .subscription-title{
+  font-size: 25px;
+  }
+  .flex-row-footer{
+    flex-direction: column;
+  }
+  .blog-button{
+    width: 40%;
+    font-size: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+  }
+  .input-field {
+    width: 70%;
+   }
+   .send-button{
+     width: 50%;
+   }
+}
+
+/* ==================================================================================== */
+.footer {
+  text-align: center;
+  align-items: center;
+
+  width: 100%;
+
+  color: #fff;
+  font: 400 18px/145% Inter, sans-serif;
+}
+
+.header-text {
+  margin-left: 20%;
+  color: #fff;
+  white-space: nowrap;
+  font: 700 25px 'Shippori Mincho', sans-serif;
+}
+
+.info-text {
+  color: rgb(255, 255, 255);
+  /* margin-top: 25px; */
+  font: 400 20px/37px Work Sans, sans-serif;
+  width: 100%;
+}
+
+.info-text-one {
+  color: rgb(255, 255, 255);
+  font: 400 20px/37px Work Sans, sans-serif;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  background-color: #2e4049;
+}
+
+.main-content {
+  align-self: center;
+  margin-top: 62px;
+  flex-grow: 1;
+  padding: 50px 0;
+}
+
+.section {
+ display: grid;
+ grid-template-columns: 2.5fr 1fr 1fr 1fr;
+
+}
+.social-media-icon {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.social-media-icon i {
+  color: #fff;
+}
+
+
+.social-icon {
+  width: 100%;
+  color: #2e4049;
+  aspect-ratio: 1.09;
+  object-fit: cover;
+  object-position: center;
+}
+
+.content-sections {
+  background-color: #384c56;
+  width: 100%;
+}
+
+.content-sections,
+.content-section-alt {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.image-group {
+  display: flex;
+  margin-top: 30px;
+  gap: 15px;
+}
+
+.image-group,
+.info-text-one {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.contact-info,
+.content-section-alt {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.footer.color {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+@media screen and (max-width:991px) {
+  .header-text{
+    font-size: 17px;
+  }
+  .info-text-one{
+    font-size: 17px;
+  }
+  .info-text{
+    font-size: 15px; 
+  }
+}
+@media screen and (max-width:768px) {
+  .section{
+
+  grid-template-columns: repeat(3,1);
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  }
+.content-sections{
+  grid-column: 1/-1; 
+}
+  .main-content{
+    padding: 0; 
+  }
+}
+@media screen and (max-width:425px){
+  .section{
+  grid-template-columns: 1fr;
+
+  }
+    .contact-info{
+      width: 80%;
+    }
+    .info-text-one{
+      font-size: 4vw !important;
+    }
+  
+}
