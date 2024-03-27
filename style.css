@@ -1518,11 +1518,17 @@ textarea {
   align-items: center;
   text-align: center;
 }
+.cta-title{
+  font-family: Shippori Mincho, -apple-system, Roboto, Helvetica,sans-serif;;
+  font-weight: 800;
+  font-size: clamp(1.1em,3vw,2em);
+}
 
-.cta-title,
+
 .cta-description {
-  font: 800 2.1vw Shippori Mincho, -apple-system, Roboto, Helvetica,
-    sans-serif;
+  font-family: Shippori Mincho, -apple-system, Roboto, Helvetica,sans-serif;;
+  font-weight: 800;
+  font-size: clamp(.8em,2vw,1.5em);
 }
 
 .cta-button {
@@ -1545,18 +1551,10 @@ textarea {
   .profile-container{
     grid-template-columns: 1fr 1fr;
   }
-
-  .cta-description,
-  .cta-title {
-    font: 800 3.3vw Shippori Mincho, -apple-system, Roboto, Helvetica,sans-serif !important;
-  }
 }
 @media screen and (max-width: 425px) {
   .team-section{
     margin-top: 0;
-  }
-  .cta-title {
-    font: 800 3.3vw/10px Shippori Mincho, -apple-system, Roboto, Helvetica,sans-serif !important;
   }
   .profile-container{
     flex-direction: column;
